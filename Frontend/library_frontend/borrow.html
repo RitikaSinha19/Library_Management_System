@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>📖 Borrow Book</header>
+    <nav>
+        <button onclick="location.href='home.html'">Home</button>
+    <button onclick="location.href='books.html'">Books</button>
+    <button onclick="location.href='members.html'">Members</button>
+    <button onclick="location.href='borrow.html'">Borrow</button>
+    <button onclick="location.href='return.html'">Return</button>
+</nav>
+
+
+    <div class="container">
+        <h3>Borrow Book</h3>
+        <form id="borrowForm">
+            <select id="memberSelect" required>
+                <option value="">Select Member</option>
+            </select>
+
+            <select id="bookSelect" required>
+                <option value="">Select Book</option>
+            </select>
+
+            <button type="submit">Borrow</button>
+        </form>
+
+        <h3>All Borrowed</h3>
+        <table id="borrowTable">
+            <thead>
+                <tr>
+                    <th>Borrow ID</th>
+                    <th>Member Name</th>
+                    <th>Book Name</th>
+                    <th>Date Borrowed</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <footer>For help contact: +91-1234567890</footer>
+    <script src="borrow.js"></script>
+</body>
+</html>

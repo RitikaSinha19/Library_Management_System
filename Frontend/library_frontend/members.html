@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Members</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>👤 Manage Members</header>
+    <nav>
+        <button onclick="location.href='home.html'">Home</button>
+    <button onclick="location.href='books.html'">Books</button>
+    <button onclick="location.href='members.html'">Members</button>
+    <button onclick="location.href='borrow.html'">Borrow</button>
+    <button onclick="location.href='return.html'">Return</button>
+</nav>
+
+
+    <div class="container">
+        <h3>Add New Member</h3>
+        <form id="addMemberForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone" required>
+            <input type="date" id="dateMembership" required>
+            <input type="date" id="endMembership" required>
+            <button type="submit">Add Member</button>
+        </form>
+
+        <h3>All Members</h3>
+        <table id="membersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Date of Membership</th>
+                    <th>End of Membership</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <footer>For help contact: +91-1234567890</footer>
+    <script src="members.js"></script>
+</body>
+</html>

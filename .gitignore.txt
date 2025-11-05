@@ -1,0 +1,15 @@
+# --- Backend (Spring Boot) ---
+backend/target/
+backend/*.log
+backend/.idea/
+backend/*.iml
+
+# --- Frontend (HTML/JS) ---
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# --- OS / Environment files ---
+.DS_Store
+Thumbs.db
+.env

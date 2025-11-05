@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>📕 Return Book</header>
+    <nav>
+        <button onclick="location.href='home.html'">Home</button>
+    <button onclick="location.href='books.html'">Books</button>
+    <button onclick="location.href='members.html'">Members</button>
+    <button onclick="location.href='borrow.html'">Borrow</button>
+    <button onclick="location.href='return.html'">Return</button>
+</nav>
+
+
+    <div class="container">
+        <h3>Return Book</h3>
+        <form id="returnForm">
+            <select id="borrowSelect" required>
+                <option value="">Select Borrow Record</option>
+            </select>
+            <button type="submit">Return</button>
+        </form>
+
+        <h3>All Returned</h3>
+        <table id="returnTable">
+            <thead>
+                <tr>
+                    <th>Return ID</th>
+                    <th>Member Name</th>
+                    <th>Book Name</th>
+                    <th>Date Returned</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <footer>For help contact: +91-1234567890</footer>
+    <script src="return.js"></script>
+</body>
+</html>
